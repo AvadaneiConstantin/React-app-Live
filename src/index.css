@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/employees.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapperDivLogo {
+  filter: drop-shadow(0 0 4px black);
+}
+
+/* logo firma */
+.divLogo {
+  width: 120px;
+  height: 120px;
+  margin-top: -66.5px;
+  margin-left: 14.4vw;
+  background-color: white;
+  /* background-color: black; */
+  clip-path: polygon(31% 97%, 31% 66%, 3% 66%, 3% 61%, 4% 59%, 6% 57%, 8% 56%, 8% 54%, 10% 52%, 12% 50%, 14% 50%, 16% 50%, 18% 52%, 
+  20% 54%, 20% 56%, 23% 58%, 24% 59%, 25% 63%, 22% 63%, 21% 60%, 17% 59%, 17% 56%, 16% 54%, 14% 53%, 12% 54%, 11% 55%, 11% 59%, 8% 59%, 7% 60%, 7% 63%, 14% 63%, 22% 63%, 
+  25% 63%, 25% 66%, 31% 66%, 31% 56%, 35% 50%, 37% 50%, 37% 41%, 41% 41%, 41% 36%, 39% 35%, 39% 31%, 45% 31%, 45% 28%, 47% 16%, 48% 16%, 48% 3%, 52% 3%, 52% 16%, 53% 16%, 
+  55% 28%, 55% 31%, 61% 31%, 61% 35%, 66% 36%, 65% 36%, 67% 32%, 69% 30%, 73% 30%, 
+  74% 27%, 76% 25%, 78% 24%, 80% 24%, 82% 24%, 84% 25%,
+   85% 27%, 86% 30%, 89% 30%, 91% 31%, 93% 33%, 94% 35%, 94% 39%, 66% 39%,
+   65% 36%, 76% 36%, 90% 36%, 90% 34%, 89% 33%, 83% 33%, 83% 29%, 81% 27%, 78% 27%, 77% 29%, 77% 33%, 72% 33%, 70% 34%, 69% 36%, 66% 36%, 
+   61% 35%, 59% 37%, 59% 41%, 62% 41%, 62% 50%, 65% 50%, 69% 56%, 69% 64%, 73% 64%, 75% 61%, 77% 59%, 80% 58%, 80% 55%, 82% 52%, 85% 51%, 87% 52%, 89% 53%, 90% 55%, 
+  91% 58%, 93% 59%, 95% 61%, 96% 63%, 97% 67%, 73% 67%, 73% 64%, 77% 64%, 93% 64%, 92% 62%, 90% 61%, 88% 61%, 88% 56%, 86% 55%, 85% 55%, 83% 56%, 83% 61%, 79% 61%, 
+  77% 64%, 73% 64%, 69% 64%, 69% 68%, 66% 68%, 66% 57%, 63% 53%, 58% 53%, 58% 50%, 59% 50%, 59% 44%, 56% 44%, 56% 34%, 44% 34%, 44% 44%, 41% 44%, 41% 50%, 42% 50%,
+   42% 53%, 37% 53%, 35% 57%, 35% 97%);
+position: absolute;
+}
+
+/* text firma */
+.brand-logoSky {
+  display: inline-block;
+  position: absolute;
+  color: #0ae0ff;
+  text-shadow: 1px 2px 5px rgb(5, 5, 5);
+  font-size: 28px;
+  letter-spacing: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  top: 10px;
+  /* left: 13.5%; */
+  left: 13vw;
+}
+
+.navBand {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 50px;
+  background-color: #000042;
+}
+
+.rightNav {
+  margin-right: 3%;
+}
+
+.rightNav li {
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  list-style: none;
+  float: right;
+  /* margin-right: 10px; */
+  margin-top: 7px;
+  color: #e4e0e0;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navBand li:hover {
+  color: white;
+  cursor: pointer;
+  border-left: 1.5px solid rgb(117, 116, 116);
+  border-right: 1.5px solid rgb(117, 116, 116);
+}
+
+/* containerul cu angajati :D */
+.container {
+  max-width: 650px;
+  margin: 180px auto;
+  overflow: auto;
+  min-height: 250px;
+  border: 1px solid steelblue;
+  box-shadow: inset 0px 0px 40px 5px rgb(156, 211, 237);
+  padding: 30px 30px 10px 30px;
+  border-radius: 5px;
+  background-color:0,0,0, 0.7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+font-size: 35px;
+color: white;
+text-shadow: 1px 2px 4px rgb(14, 13, 13);
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(53, 145, 173);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:hover {
+  box-shadow: 0 1px 3px #504e4e;
+  background: rgb(43, 123, 148);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.employee {
+  background: #f4f4f4;
+  margin: 25px 0;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.star {
+  border-left:20px solid transparent;
+  border-right: 20px solid transparent;
+  border-image-source: url(images/star.png);
+  border-image-repeat: stretch;
+  border-image-slice: 30;
+  border-image-width: 30px;  
+}
+
+.employee h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 5px 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.imageEmployee {
+  width: 90px;
+  height: 88px;
+  background-image: url('images/employ.png');
+  background-size: 100% 100%;
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 52px;
+}
+
+.deleteEmployee{
+float: right;
+padding: 4px 10px 4px 10px;
+margin-top: -2px;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+border: 1px solid rgb(15, 77, 9);
+border-radius: 5px;
+transition: .1s ;
+font-family: serif;
+}
+
+.deleteEmployee:hover {
+  box-shadow: 0 1px 3px #6e6c6c;
+}
+
+.deleteEmployee:active {
+  transform: scale(0.98);
+}
+
+.firedText {
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.add-form {
+  margin-bottom: 80px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 3px 7px;
+  color: black;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid rgb(230, 230, 87); */
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+.checkboxStar {
+  position: relative;
+ left: -250px;
+}
+
+.footerText {
+  color: white;
+  background-color: rgba(0, 0, 0, .4);
+  font-size: 15px;
+  /* display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
